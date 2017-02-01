@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>02_Ejercicio3_Calculadora</display-name>
+  <servlet>
+		<servlet-name>Calculadora_Portlet</servlet-name>
+		<servlet-class>org.apache.pluto.container.driver.PortletServlet</servlet-class>
+		<init-param>
+			<param-name>portlet-name</param-name>
+			<param-value>Calculadora_Portlet</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Calculadora_Portlet</servlet-name>
+		<url-pattern>/PlutoInvoker/Calculadora_Portlet</url-pattern>
+	</servlet-mapping>
+</web-app>
